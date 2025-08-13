@@ -25,8 +25,8 @@ const projects: Project[] = [
       "This personal portfolio showcases my projects and technical skills, with responsive design, charts, and animations.",
     image: piggyvestImg,
     stack: ["React", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com/yourname/portfolio",
-    live: "https://yourportfolio.com",
+    github: "https://github.com/MrSalau/Piggyvest-Clone",
+    live: "https://piggyvest-clone-plum.vercel.app/",
   },
   {
     id: 2,
@@ -37,8 +37,8 @@ const projects: Project[] = [
       "This personal portfolio showcases my projects and technical skills, with responsive design, charts, and animations.",
     image: metaverseImg,
     stack: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/yourname/portfolio",
-    live: "https://yourportfolio.com",
+    github: "https://github.com/MrSalau/Metaverse-Clone",
+    live: "https://metaverse-clone-swart.vercel.app/",
   },
   {
     id: 3,

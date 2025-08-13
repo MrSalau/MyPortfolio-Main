@@ -30,7 +30,6 @@ export default function Contact() {
 
   const onSubmit = async (data: ContactFormInputs) => {
     try {
-      // Simulate successful form submission
       console.log("Submitted data:", data);
       toast.success("Message sent successfully! 🎉");
       reset();
@@ -50,28 +49,28 @@ export default function Contact() {
 
       <h2 className="text-3xl font-bold mb-10 text-center">📬 Contact Me</h2>
 
-      <div className="grid md:grid-cols-2 gap-5 ml-20">
+      <div className="grid md:grid-cols-2 gap-5 mx-auto max-w-3xl">
         {/* Left: Contact Info */}
-        <div className="space-y-4 text-gray-700">
+        <div className="space-y-4 text-gray-700 text-center md:text-left">
           <div>
-            <h3 className="text-lg font-semibold flex items-center gap-2">
+            <h3 className="text-lg font-semibold flex justify-center md:justify-start items-center gap-2">
               <Mail size={20} /> Email
             </h3>
-            <p className="ml-7">salauayoola123@gmail.com</p>
+            <p className="md:ml-7">salauayoola123@gmail.com</p>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold flex items-center gap-2">
+            <h3 className="text-lg font-semibold flex justify-center md:justify-start items-center gap-2">
               <Phone size={20} /> Phone
             </h3>
-            <p className="ml-7">+234 810 844 8540</p>
+            <p className="md:ml-7">+234 810 844 8540</p>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold flex items-center gap-2">
+            <h3 className="text-lg font-semibold flex justify-center md:justify-start items-center gap-2">
               🌐 Social Links
             </h3>
-            <div className="flex gap-5 mt-2 ml-7 text-blue-600">
+            <div className="flex justify-center md:justify-start gap-5 mt-2 md:ml-7 text-blue-600">
               <a
                 href="https://github.com/MrSalau"
                 target="_blank"
@@ -103,7 +102,7 @@ export default function Contact() {
         {/* Right: Contact Form */}
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="bg-white border rounded-lg shadow p-6 space-y-5"
+          className="bg-white border rounded-lg shadow p-6 space-y-5 w-full"
           noValidate
         >
           {/* Name */}
@@ -117,7 +116,7 @@ export default function Contact() {
             <input
               id="name"
               {...register("name")}
-              placeholder="John Atkins"
+              placeholder="James John"
               title="Please enter your full name"
               className={`w-full mt-1 px-4 py-2 border rounded-md focus:outline-none focus:ring ${
                 errors.name ? "border-red-500" : "border-gray-300"
@@ -182,7 +181,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition disabled:opacity-50"
+            className="flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition disabled:opacity-50"
           >
             <Send size={18} /> {isSubmitting ? "Sending..." : "Send Message"}
           </button>
