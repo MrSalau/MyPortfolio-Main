@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import piggyvestImg from "../assets/projects/piggyvest.png";
-import mooveImg from "../assets/projects/moove.png";
+import bakeryImg from "../assets/projects/bakery.png";
 import metaverseImg from "../assets/projects/metaverse.png";
 
 type Project = {
@@ -42,14 +42,15 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Moove Clone",
+    title: "Sweet Crumbs Bakery",
     summary:
-      "Moove.io is a user-friendly car rental service app that allows users to browse, book, and manage vehicle rentals quickly and conveniently. The app offers a wide selection of vehicles, from economy cars to luxury SUVs, available for hourly, daily, or weekly rental. Key features include real-time vehicle availability, GPS-based pickup/drop-off location selection, secure in-app payments, and 24/7 customer support. Users can also access rental history, receive digital keys, and get maintenance alerts or special offers through the app.",
+      "A full-stack bakery management system that allows users to manage orders, products, and customers efficiently.",
     details:
       "Includes full authentication, CRUD operations, and JWT-based authorization. Built with RESTful architecture and error handling.",
-    image: mooveImg,
-    stack: ["Node.js", "Express", "MongoDB", "JWT"],
-    github: "https://github.com/yourname/task-manager-api",
+    image: bakeryImg,
+    stack: ["React", "TypeScript", "Tailwindcss", "Framer Motion"],
+    github: "https://github.com/MrSalau/Sweet-Crumbs-Bakery",
+    live: "https://sweet-crumbs-bakery-opal.vercel.app/",
   },
 ];
 

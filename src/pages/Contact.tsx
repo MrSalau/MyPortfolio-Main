@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { Mail, Phone, Github, Linkedin, Twitter, Send } from "lucide-react";
 import toast, { Toaster } from "react-hot-toast";
 
-// ✅ Validation Schema using Yup
 const schema = yup.object().shape({
   name: yup.string().required("Name is required").min(2),
   email: yup.string().email("Invalid email").required("Email is required"),
